@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .search-box {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .search-box input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-box input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .word-list {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .word-list div {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .word-list div h3 {
+            margin: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dictionary Website</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-box">
+            <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Enter word to search..." required>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <div class="word-list">
+            <div>
+                <h3>Example</h3>
+                <p>A representative form or pattern.</p>
+            </div>
+            <div>
+                <h3>Dictionary</h3>
+                <p>A reference book that lists words in alphabetical order.</p>
+            </div>
+            <div>
+                <h3>Word</h3>
+                <p>A single distinct meaningful element of speech or writing.</p>
+            </div>
+            <!-- Add more words as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dictionary Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
